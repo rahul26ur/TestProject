@@ -5,11 +5,11 @@ node{
         url: 'https://github.com/rahul26ur/TestProject.git'
     }
     
-    stage('Run Docker Compose File')
+    /*stage('Run Docker Compose File')
     {
         sh 'sudo docker-compose build'
         sh 'sudo docker-compose up -d'
-    }
+    }*/
     /*
     stage('PUSH image to Docker Hub')
     {
