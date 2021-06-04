@@ -8,7 +8,7 @@ node{
     {
         
         withMaven(maven : 'apache-maven-3.6.1') {
-        bat'mvn clean compile'
+        sh 'mvn clean compile'
         }
     }
     stage('Run Docker Compose File')
