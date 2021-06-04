@@ -1,4 +1,4 @@
-pipeline {
+/*pipeline {
     agent any
     environment
     {
@@ -28,7 +28,8 @@ pipeline {
         
     }
 }
-/*
+*/
+
 node{
      environment
     {
@@ -61,4 +62,4 @@ node{
         sh 'docker push vardhanns/phpmysql_app'
     }*/
 }
-*/
+
