@@ -1,9 +1,5 @@
 node{
-     tools {
-    maven 'mvn-3.5.2'
-  }
-
-
+    
     stage('SCM Checkout')
     {
         url: 'https://github.com/rahul26ur/TestProject.git'
