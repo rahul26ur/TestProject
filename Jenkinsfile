@@ -1,4 +1,8 @@
 node{
+     tools {
+    maven 'mvn-3.5.2'
+  }
+
 
     stage('SCM Checkout')
     {
@@ -7,6 +11,7 @@ node{
     
     stage('Run Docker Compose File')
     {
+        sh 'mvn package'
         sh 'sudo docker-compose build'
         sh 'sudo docker-compose up -d'
     }
