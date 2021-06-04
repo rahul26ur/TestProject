@@ -1,35 +1,3 @@
-/*pipeline {
-    agent any
-    environment
-    {
-        PATH="/usr/bin:$PATH"
-    }
-    stages{
-            stage('SCM Checkout')
-            {
-                steps{
-                    url: 'https://github.com/rahul26ur/TestProject.git'
-                }
-            }
-            stage ('Build Stage') 
-            {    
-                steps{
-                  sh 'mvn clean install'
-                }
-            
-            }
-            /*stage('Run Docker Compose File')
-            {
-                
-                sh 'sudo docker-compose build'
-                sh 'sudo docker-compose up -d'
-            }
-            */
-        
-    }
-}
-*/
-
 node{
      environment
     {
