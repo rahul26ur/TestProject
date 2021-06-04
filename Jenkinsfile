@@ -4,10 +4,17 @@ node{
     {
         url: 'https://github.com/rahul26ur/TestProject.git'
     }
-    
+    stage ('Compile Stage') 
+    {
+        steps {
+        withMaven(maven : 'apache-maven-3.6.1') {
+        bat'mvn clean compile'
+        }
+        }
+    }
     stage('Run Docker Compose File')
     {
-        sh 'mvn package'
+        
         sh 'sudo docker-compose build'
         sh 'sudo docker-compose up -d'
     }
