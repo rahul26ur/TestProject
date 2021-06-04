@@ -1,22 +1,25 @@
 node{
+     environment
+    {
+        PATH="/usr/bin:$PATH"
+    }
     
     stage('SCM Checkout')
     {
         url: 'https://github.com/rahul26ur/TestProject.git'
     }
-    stage ('Compile Stage') 
-    {
-        
-        withMaven(maven : 'apache-maven-3.6.1') {
-        sh 'mvn clean compile'
-        }
+    stage ('Build Stage') 
+    {    
+          sh 'mvn clean install'
+    
     }
-    stage('Run Docker Compose File')
+    /*stage('Run Docker Compose File')
     {
         
         sh 'sudo docker-compose build'
         sh 'sudo docker-compose up -d'
     }
+    */
     /*
     stage('PUSH image to Docker Hub')
     {
