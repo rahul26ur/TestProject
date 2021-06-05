@@ -8,14 +8,14 @@ node{
     {
         url: 'https://github.com/rahul26ur/TestProject.git'
     }
-    stage ('Build Stage') 
+    /*stage ('Build Stage') 
     {    
-         /*withMaven {
+         withMaven {
           sh 'mvn clean install'
          }
-         */
+         
     
-    }
+    }*/
     /*stage('Run Docker Compose File')
     {
         
