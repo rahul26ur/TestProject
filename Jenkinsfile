@@ -10,9 +10,9 @@ node{
     }
     stage ('Build Stage') 
     {    
-         withMaven {
+         //withMaven {
           sh 'mvn clean install'
-         }
+         //}
     
     }
     /*stage('Run Docker Compose File')
