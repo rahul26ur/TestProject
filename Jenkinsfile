@@ -1,16 +1,16 @@
 node{
-    /* environment
+     environment
     {
         PATH="/usr/bin:$PATH"
     }
-    */
+    
     
     stage('SCM Checkout')
     {
         url: 'https://github.com/rahul26ur/TestProject.git'
     }
     
-   /*stage ('Build Stage') 
+    stage ('Build Stage') 
     {    
          withMaven {
           sh 'mvn clean install'
@@ -24,7 +24,7 @@ node{
         sh 'sudo docker-compose up -d'
     }
     
-    
+    /*
     stage('PUSH image to Docker Hub')
     {
         withCredentials([string(credentialsId: 'DockerHubPassword', variable: 'DHPWD')]) 
