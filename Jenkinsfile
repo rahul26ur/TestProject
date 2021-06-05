@@ -17,6 +17,7 @@ node{
          }
       
     }
+    /*
     stage('Run Docker Compose File')
     {
         
@@ -24,7 +25,7 @@ node{
         sh 'sudo docker-compose up -d'
     }
     
-    /*
+    
     stage('PUSH image to Docker Hub')
     {
         withCredentials([string(credentialsId: 'DockerHubPassword', variable: 'DHPWD')]) 
