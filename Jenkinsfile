@@ -3,13 +3,13 @@ node{
     {
         PATH="/usr/bin:$PATH"
     }
-    
-    
+        
     stage('SCM Checkout')
     {
         url: 'https://github.com/rahul26ur/TestProject.git'
     }
     
+    /*
     stage ('Build Stage') 
     {    
          withMaven {
@@ -17,7 +17,7 @@ node{
          }
       
     }
-    /*
+    
     stage('Run Docker Compose File')
     {
         
