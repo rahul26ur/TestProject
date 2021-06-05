@@ -1,8 +1,9 @@
 node{
-     environment
+    /* environment
     {
         PATH="/usr/bin:$PATH"
     }
+    */
         
     stage('SCM Checkout')
     {
