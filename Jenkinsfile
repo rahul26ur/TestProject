@@ -1,7 +1,7 @@
 node{
     stage('SCM Checkout')
     {
-        git url: 'https://github.com/rahul26ur/TestProject.git'
+        url: 'https://github.com/rahul26ur/TestProject.git'
     }
     
     /*
